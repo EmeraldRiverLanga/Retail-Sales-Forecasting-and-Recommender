@@ -76,7 +76,7 @@ Daily revenue is aggregated into a time series, then turned into a supervised pr
 with seven **lag features** — each day is described by the revenue of the previous
 seven trading days.
 
-![Lag features](screenshots/lag_.PNG)
+![Lag features](screenshots/lag.PNG)
 
 ### Avoiding data leakage
 The train/test split is **chronological, not shuffled**. Shuffling would let the models
@@ -95,7 +95,7 @@ Both tree models track the calm periods well but stay flat at the peaks: a tree-
 model cannot predict a value higher than any it saw in training, so it systematically
 under-predicts the pre-Christmas spikes.
 
-![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM-Baseline.png)
+![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM_Baseline.png)
 
 | Model | RMSE |
 |---|---|
