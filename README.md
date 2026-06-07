@@ -89,13 +89,13 @@ Random Forest and XGBoost are trained on the lag features directly. The LSTM
 additionally requires the data to be scaled (fit on the training set only, to avoid
 leakage) and reshaped into sequences — a step that neural networks need to train stably.
 
-![Random Forest vs XGBoost](screenshots/XGBoost_vs_Random_Forest.PNG)
+![Random Forest vs XGBoost](screenshots/XGBoost_vs_Random_Forest.png)
 
 Both tree models track the calm periods well but stay flat at the peaks: a tree-based
 model cannot predict a value higher than any it saw in training, so it systematically
 under-predicts the pre-Christmas spikes.
 
-![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM-Baseline.PNG)
+![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM-Baseline.png)
 
 | Model | RMSE |
 |---|---|
@@ -124,7 +124,7 @@ Per-customer metrics (order count, total items, total spend) show that "valuable
 customer" is not a single profile: some buy frequently in small amounts, others place
 rare but very large wholesale orders.
 
-![Top 10 customers by total spend](screenshots/top_10.PNG)
+![Top 10 customers by total spend](screenshots/top_10.png)
 
 ### A collaborative-filtering recommender
 Each customer is represented as a row in a user–item matrix (products bought, by
