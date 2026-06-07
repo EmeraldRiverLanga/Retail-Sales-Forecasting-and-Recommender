@@ -95,7 +95,7 @@ Both tree models track the calm periods well but stay flat at the peaks: a tree-
 model cannot predict a value higher than any it saw in training, so it systematically
 under-predicts the pre-Christmas spikes.
 
-![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM_Baseline.png)
+![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM_Baseline)
 
 | Model | RMSE |
 |---|---|
