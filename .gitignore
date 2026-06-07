@@ -1,0 +1,10 @@
+# Virtual environment
+.venv/
+
+# Dataset — download separately (see README)
+data/
+
+# Python / Jupyter artifacts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
