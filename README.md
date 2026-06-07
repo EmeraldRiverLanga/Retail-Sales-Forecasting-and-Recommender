@@ -58,7 +58,7 @@ The raw data has three quality issues that shape every later decision: about a q
 of the rows have no customer ID, some quantities are negative (cancellations and
 returns), and some unit prices are negative (accounting adjustments).
 
-![Data structure and summary statistics](screenshots/info-describe.PNG)
+![Data structure and summary statistics](screenshots/info_describe.PNG)
 
 `info()` reveals the missing customer IDs; `describe()` reveals the negative quantities
 and prices. These are facts about the data rather than errors — and how they are
@@ -95,7 +95,7 @@ Both tree models track the calm periods well but stay flat at the peaks: a tree-
 model cannot predict a value higher than any it saw in training, so it systematically
 under-predicts the pre-Christmas spikes.
 
-![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM.PNG)
+![Model comparison](screenshots/XGBoost_vs_Random_Forest_vs_LSTM-Baseline.PNG)
 
 | Model | RMSE |
 |---|---|
